@@ -1,0 +1,61 @@
+//
+#go_home {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+#go_planning {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+//
+#main_container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//
+table {
+    text-align: center;
+}
+
+thead {
+    font-size: 30px;
+    height: 100px;
+}
+
+#shoplist {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    align-items: flex-end;
+}
+
+#shoplist_table {
+    width: 100%;
+    background-color: rgb(255, 249, 239);
+}
+
+.shoplist_table_quantity_row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.shoplist_table_quantity_row_text_quantity {
+    width: 40%;
+    text-align: right;
+    margin-right: 5px;
+}
+
+.shoplist_table_quantity_row_text_unit {
+    width: 40%;
+    text-align: left;
+    margin-left: 5px;
+}

@@ -1,0 +1,39 @@
+#main_container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+#day {
+    font-family: Roboto Condensed, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.meal {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(209, 209, 209);
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    background-color: rgb(129, 129, 129);
+}
+
+.recipe_name {
+    width: 100%;
+    text-align: center;
+}
+
+.recipe_image {
+    width: 100%;
+    text-align: center;
+}

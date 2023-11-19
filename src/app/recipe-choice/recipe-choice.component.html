@@ -1,0 +1,6 @@
+<p>Choix de la recette</p>
+<button (click)="cancelChooseRecipe()">Annuler</button><br/>
+<button (click)="chooseRecipe('')">Rien</button><br/>
+<div *ngFor="let recipe of recipes">
+    <button (click)="chooseRecipe(recipe)">{{recipe.name}}</button><br/>
+</div>

@@ -1,0 +1,10 @@
+<div id="main_container">
+    <div id="day">{{ day[0].day }}</div>
+    <div *ngFor="let meal of day" class="meal">
+        <p>{{meal.meal}}</p>
+        <div class="recipe" (click)="chooseRecipe(meal)">
+            <div class="recipe_name">{{meal.recipe}}</div>
+            <img class="recipe_image" src="https://i.pinimg.com/originals/9a/09/ed/9a09ed259baad06fb3d3e478d8100f12.jpg" />
+        </div>
+    </div>
+</div>

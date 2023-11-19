@@ -1,0 +1,22 @@
+<button id="go_home" (click)="goHome()">Accueil</button>
+<button id="go_planning" (click)="goPlanning()">Planning</button>
+<div id="main_container">
+    <div id="shoplist">
+        <table id="shoplist_table">
+            <thead>
+                <tr>
+                    <th>Produit</th><th>Quantité</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of shoplist">
+                    <td class="shoplist_table_product_row">{{item.product.description}}</td>
+                    <td class="shoplist_table_quantity_row">
+                        <div class="shoplist_table_quantity_row_text_quantity">{{item.quantity}}</div>
+                        <div class="shoplist_table_quantity_row_text_unit">{{item.product.unit}}</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

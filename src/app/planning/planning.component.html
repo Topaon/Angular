@@ -1,0 +1,7 @@
+<button id="return" (click)="goHome()">Retour</button>
+<button id="shoplist" (click)="goShoplist()">Shoplist</button>
+<div id="main_container">
+    <div id="planning">
+        <app-planning-item *ngFor="let day of planning" [day]="day" class="planning_item"></app-planning-item>
+    </div>
+</div>
