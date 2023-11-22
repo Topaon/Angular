@@ -42,6 +42,7 @@ export class RecipeChoiceComponent {
       if (mealItem) {
         mealItem.recipe = recipe.name;
         mealItem.recipeId = recipe.id;
+        mealItem.image_url = recipe.image_url;
       }
     }
     this.router.navigate(['planning'])
