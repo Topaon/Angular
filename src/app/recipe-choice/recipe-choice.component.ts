@@ -28,7 +28,9 @@ export class RecipeChoiceComponent {
   }
 
   ngOnInit() {
-    this.http.get<any[]>("http://localhost:8080/chopy/chopy-api/recipe").subscribe(data => {
+ //   var url = "http://13.53.73.156:8080/chopy/chopy-api/recipe";
+    var url = "http://localhost:8080/chopy/chopy-api/recipe";
+    this.http.get<any[]>(url).subscribe(data => {
       this.recipes = data
     })
   }

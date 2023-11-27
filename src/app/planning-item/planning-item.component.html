@@ -1,10 +1,12 @@
 <div id="main_container">
     <div id="day">{{ day[0].day }}</div>
     <div *ngFor="let meal of day" class="meal">
-        <p>{{meal.meal}}</p>
+        <div id="meal_title">{{meal.meal}}</div>
         <div class="recipe" (click)="chooseRecipe(meal)">
             <div class="recipe_name">{{meal.recipe}}</div>
-            <img class="recipe_image" src={{meal.image_url}} />
+            <div class="recipe_image_container">
+                <img class="recipe_image" src={{meal.image_url}} />
+            </div>
         </div>
     </div>
 </div>

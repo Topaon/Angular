@@ -1,6 +1,14 @@
-<p>Choix de la recette</p>
-<button (click)="cancelChooseRecipe()">Annuler</button><br/>
-<button (click)="chooseRecipe('')">Rien</button><br/>
-<div *ngFor="let recipe of recipes">
-    <button (click)="chooseRecipe(recipe)">{{recipe.name}}</button><br/>
+<div class="main_container">
+    <button class="cancel_button" (click)="cancelChooseRecipe()">Annuler</button><br/>
+    <button class="nothing_button" (click)="chooseRecipe('')">Rien</button><br/>
+    <h1>Choisissez un plat</h1>
+    <br/>
+    <div class="recipe_list">
+        <div class="recipe_item" *ngFor="let recipe of recipes" (click)="chooseRecipe(recipe)">
+            <div class="image_container">
+                <img class="recipe_item_image" [src]=recipe.image_url />
+            </div>
+            <div>{{recipe.name}}</div>
+        </div>
+    </div>
 </div>
