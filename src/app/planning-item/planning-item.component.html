@@ -4,9 +4,7 @@
         <div id="meal_title">{{meal.meal}}</div>
         <div class="recipe" (click)="chooseRecipe(meal)">
             <div class="recipe_name">{{meal.recipe}}</div>
-            <div class="recipe_image_container">
-                <img class="recipe_image" src={{meal.image_url}} />
-            </div>
+            <img *ngIf="meal.image_url" class="recipe_image" src={{meal.image_url}} />
         </div>
     </div>
 </div>
